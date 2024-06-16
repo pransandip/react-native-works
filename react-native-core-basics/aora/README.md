@@ -1,43 +1,31 @@
-# Welcome to Expo app
+# Aora
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+### To Run this Project
 
-1. Install dependencies
+- Install dependencies
 
-   ```bash
-   npm install
-   ```
+  ```bash
+  npm install
+  ```
 
-2. Start the app
+- Start the app
 
-   ```bash
-    npx expo start -c
-   ```
+  ```bash
+   npx expo start -c
+  ```
 
-In the output, you'll find options to open the app in a
+_In the output, you'll find options to open the app in a_
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [`Expo Go`](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### **project development information :**
 
-## Get a fresh project
+- We are using `nativewind` for styling which uses `tailwindcss`.
 
-When you're ready, run:
+- If you using `babel` then `babel plugin` automatically wrap your components in `styled()` reducing the required boilerplate.
 
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-# Aora
-
-#### **project development information :**
-
+- In `root` dir added `global.d.ts` file to fix `className` error.
 - When you add directory inside `app` directory with parentheses like `(auth)` it's considered as a route group.
-- `dynamic route` when you add a file within bracket, like `[query].tsx`
+- `dynamic route` when you add a file within bracket, like `[query].tsx`.

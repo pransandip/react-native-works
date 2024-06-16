@@ -1,20 +1,20 @@
 import { Text, TouchableOpacity } from "react-native";
 
-interface btnPropsTypes {
+type btnProps = {
   title: string;
   isLoading: boolean;
-  textStyles: string;
+  textStyles?: string;
   handlePress: () => void;
   containerStyles: string;
-}
+};
 
-export function CustomButton({
+export const CustomButton = ({
   title,
   isLoading,
   textStyles,
   handlePress,
   containerStyles,
-}: btnPropsTypes) {
+}: btnProps) => {
   return (
     <TouchableOpacity
       onPress={handlePress}
@@ -29,4 +29,4 @@ export function CustomButton({
       </Text>
     </TouchableOpacity>
   );
-}
+};
